@@ -34,7 +34,7 @@ const json2 = {
     occupation: 'Software Engineer'
 };
 
-const differences = findJsonDifference(json1, json2);
+const differences = jsonDiff(json1, json2);
 
 console.log(differences);
 /* output : {

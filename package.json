@@ -1,13 +1,15 @@
 {
   "name": "find-json-difference",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Json difference between two objects in proper format",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "json-diff","json-difference","find-json-difference"
+    "json-diff",
+    "json-difference",
+    "find-json-difference"
   ],
   "author": "Pankaj Kumar Pandey",
   "license": "ISC",

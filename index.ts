@@ -1,8 +1,14 @@
+interface JsonDifference {
+  added: Record<string, any>;
+  deleted: Record<string, any>;
+  edited: Record<string, [any, any]>;
+}
+
 /**
  * Calculates the difference between two JSON objects.
  * @param {any} json1 - The first JSON object.
  * @param {any} json2 - The second JSON object.
- * @returns {{added: any, deleted: any, edited: any}} - The difference between the two JSON objects.
+ * @returns {JsonDifference} - The difference between the two JSON objects.
  *
  * @example
  * const json1 = { name: 'John', age: 30 };
@@ -23,8 +29,8 @@
  * console.log(diff);
  * // Output: { added: { city: 'New York' }, deleted: {}, edited: {} }
  */
-function jsonDiff(json1, json2){
-  let diff = {
+function jsonDiff(json1: any, json2: any): JsonDifference {
+  let diff: JsonDifference = {
     added: {},
     deleted: {},
     edited: {},
@@ -51,4 +57,8 @@ function jsonDiff(json1, json2){
   return diff;
 }
 
-module.exports = jsonDiff;
+// Named export for TypeScript
+export { jsonDiff, JsonDifference };
+
+// Default export for JavaScript
+export default jsonDiff;

@@ -1,4 +1,4 @@
-const jsonDiff = require('./index.js');
+const { jsonDiff } = require("./dist/index.js");
 
 const json1 = {
   name: "John Doe",

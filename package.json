@@ -1,6 +1,11 @@
 {
   "name": "find-json-difference",
-  "version": "1.1.0",
+  "homepage": "https://github.com/pank1999/find-json-difference",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pank1999/find-json-difference"
+  },
+  "version": "1.1.1",
   "description": "Json difference between two objects in proper format",
   "main": "dist/index.js",
   "module": "dist/index.js",
